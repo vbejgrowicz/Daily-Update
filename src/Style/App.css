@@ -1,0 +1,46 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #222;
+  height: auto;
+  padding: 10px;
+  color: white;
+}
+
+.articles {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.full-article {
+  margin: 10px;
+  background-color: lightgrey;
+}
+
+.full-article:hover {
+  opacity: 0.5;
+}
+
+.article {
+  padding: 5px;
+  width: 250px;
+  height: auto;
+}
+
+.title {
+  font-weight: bold;
+  margin: 5px;
+}
+
+.image {
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.categories {
+    list-style-type: none;
+}
