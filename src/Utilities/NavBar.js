@@ -1,6 +1,6 @@
 /*jshint esversion:6*/
 import React from 'react';
-import {Nav, NavItem } from 'react-bootstrap';
+import { Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 
 class NavBar extends React.Component {
 
@@ -10,32 +10,34 @@ handleSelect(e) {
 
   render() {
     return (
-      <Nav bsStyle="tabs" activeKey={this.props.category} onSelect={(e) => this.handleSelect(e)}>
-        <NavItem eventKey="home" href="/">Home</NavItem>
-        <NavItem eventKey="opinion" href="/">Opinion</NavItem>
-        <NavItem eventKey="world" href="/">World</NavItem>
-        <NavItem eventKey="national" href="/">National</NavItem>
-        <NavItem eventKey="politics" href="/">Politics</NavItem>
-        <NavItem eventKey="upshot" href="/">Upshot</NavItem>
-        <NavItem eventKey="nyregion" href="/">NY Region</NavItem>
-        <NavItem eventKey="business" href="/">Buisness</NavItem>
-        <NavItem eventKey="technology" href="/">Technology</NavItem>
-        <NavItem eventKey="science" href="/">Science</NavItem>
-        <NavItem eventKey="sports" href="/">Sports</NavItem>
-        <NavItem eventKey="arts" href="/">Arts</NavItem>
-        <NavItem eventKey="books" href="/">Books</NavItem>
-        <NavItem eventKey="movies" href="/">Movies</NavItem>
-        <NavItem eventKey="theater" href="/">Theater</NavItem>
-        <NavItem eventKey="sundayreview" href="/">Sunday Review</NavItem>
-        <NavItem eventKey="fashion" href="/">Fashion</NavItem>
-        <NavItem eventKey="tmagazine" href="/">T Magazine</NavItem>
-        <NavItem eventKey="food" href="/">Food</NavItem>
-        <NavItem eventKey="travel" href="/">Travel</NavItem>
-        <NavItem eventKey="magazine" href="/">Magazine</NavItem>
-        <NavItem eventKey="realestate" href="/">Real Estate</NavItem>
-        <NavItem eventKey="automobiles" href="/">Automobiles</NavItem>
-        <NavItem eventKey="obituaries" href="/">Obituaries</NavItem>
-        <NavItem eventKey="insider" href="/">Insider</NavItem>
+      <Nav bsStyle="tabs" justified activeKey={this.props.category} onSelect={(e) => this.handleSelect(e)}>
+        <NavItem eventKey="home">Top Stories</NavItem>
+        <NavItem eventKey="world">World</NavItem>
+        <NavItem eventKey="national">National</NavItem>
+        <NavItem eventKey="politics">Politics</NavItem>
+        <NavItem eventKey="business">Buisness</NavItem>
+        <NavItem eventKey="technology">Technology</NavItem>
+        <NavItem eventKey="sports">Sports</NavItem>
+        <NavDropdown title="More" id="nav-dropdown">
+          <MenuItem eventKey="opinion">Opinion</MenuItem>
+          <MenuItem eventKey="upshot">Upshot</MenuItem>
+          <MenuItem eventKey="nyregion">NY Region</MenuItem>
+          <MenuItem eventKey="science">Science</MenuItem>
+          <MenuItem eventKey="insider">Insider</MenuItem>
+          <MenuItem eventKey="arts">Arts</MenuItem>
+          <MenuItem eventKey="books">Books</MenuItem>
+          <MenuItem eventKey="movies">Movies</MenuItem>
+          <MenuItem eventKey="theater">Theater</MenuItem>
+          <MenuItem eventKey="sundayreview">Sunday Review</MenuItem>
+          <MenuItem eventKey="fashion">Fashion</MenuItem>
+          <MenuItem eventKey="tmagazine">T Magazine</MenuItem>
+          <MenuItem eventKey="food">Food</MenuItem>
+          <MenuItem eventKey="travel">Travel</MenuItem>
+          <MenuItem eventKey="magazine">Magazine</MenuItem>
+          <MenuItem eventKey="realestate">Real Estate</MenuItem>
+          <MenuItem eventKey="automobiles">Automobiles</MenuItem>
+          <MenuItem eventKey="obituaries">Obituaries</MenuItem>
+        </NavDropdown>
       </Nav>
     );
   }
