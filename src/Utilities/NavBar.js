@@ -11,7 +11,7 @@ handleSelect(e) {
   render() {
     return (
       <Nav bsStyle="tabs" justified activeKey={this.props.category} onSelect={(e) => this.handleSelect(e)}>
-        <NavItem eventKey="home">Top Stories</NavItem>
+        <NavItem eventKey="home" href="/">Top Stories</NavItem>
         <NavItem eventKey="world">World</NavItem>
         <NavItem eventKey="national">National</NavItem>
         <NavItem eventKey="politics">Politics</NavItem>

@@ -7,7 +7,7 @@ import ArticleImage from './ArticleImage';
 class DisplayArticles extends React.Component {
 
   render() {
-    return (
+    return this.props.articles ? (
       <div className="articles">
       {this.props.articles.map((article, idx) => {
         return(
@@ -23,7 +23,7 @@ class DisplayArticles extends React.Component {
         );
       })}
       </div>
-    );
+    ): null;
   }
 }
 
