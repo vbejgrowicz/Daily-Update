@@ -19,28 +19,45 @@
 .full-article {
   margin: 10px;
   background-color: lightgrey;
+  height: auto;
+  position: relative;
 }
 
 .full-article:hover {
   opacity: 0.5;
 }
 
+a.article-link {
+  height: 100%;
+}
+
 .article {
   padding: 5px;
   width: 250px;
-  height: auto;
+  height: 100%;
+  position: relative;
 }
 
 .title {
   font-weight: bold;
+  font-size: larger;
   margin: 5px;
 }
 
 .image {
-  margin-bottom: 5px;
+  margin: 10px;
   display: inline-block;
 }
 
 .categories {
     list-style-type: none;
+}
+
+.DataByImage {
+  background-image: url('../Images/DataBy.png');
+  width: 150px;
+  height: 30px;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
 }

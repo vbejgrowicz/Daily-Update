@@ -36,6 +36,7 @@ getArticles() {
         </div>
         <NavBar category={this.state.category} updateCategory={this.updateCategory.bind(this)} />
         <DisplayArticles articles={this.state.articles} />
+        <div className="DataByImage"></div>
       </div>
     );
   }

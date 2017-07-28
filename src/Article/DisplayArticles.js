@@ -12,12 +12,12 @@ class DisplayArticles extends React.Component {
       {this.props.articles.map((article, idx) => {
         return(
           <li className="full-article" key={idx}>
-              <a href={article.url}>
-                <div className="article">
-                  <ArticleTitle title={article.title} />
-                  <ArticleAbstract abstract={article.abstract} />
-                  <ArticleImage images={article.multimedia} />
-                </div>
+            <a className="article-link" href={article.url}>
+              <div className="article">
+                <ArticleTitle title={article.title} />
+                <ArticleAbstract abstract={article.abstract} />
+                <ArticleImage images={article.multimedia} />
+              </div>
             </a>
           </li>
         );
