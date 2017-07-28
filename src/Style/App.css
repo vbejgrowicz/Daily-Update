@@ -49,6 +49,12 @@ a.article-link {
   display: inline-block;
 }
 
+.no-image {
+  background-image: url('../Images/nytimeslogo.jpeg');
+  margin: 10px;
+  display: inline-block;
+}
+
 .categories {
     list-style-type: none;
 }
