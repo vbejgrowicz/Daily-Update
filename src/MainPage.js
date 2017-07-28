@@ -15,11 +15,11 @@ class MainPage extends React.Component {
   }
 
 componentDidMount() {
-  this.setState({ category: this.props.category || "home"},this.getArticles);
+  this.setState({ category: this.props.category },this.getArticles);
 }
 
 updateCategory(newCategory) {
-  this.setState({ category: newCategory}, this.getArticles);
+  this.setState({ category: newCategory }, this.getArticles);
 }
 
 getArticles() {
