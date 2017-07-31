@@ -6,9 +6,9 @@ class Header extends React.Component {
 
   render() {
     return (
-      <div className="App-header">
-        <h2>News!</h2>
-      </div>
+      <a href="/">
+        <div className="App-header">Daily Update</div>
+      </a>
     );
   }
 }

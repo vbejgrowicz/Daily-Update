@@ -8,12 +8,12 @@ class DisplayArticles extends React.Component {
 
   render() {
     return this.props.articles ? (
-      <div className="articles">
+      <div className={this.props.isMainArticle ? "home-page-news" : "articles"}>
       {this.props.articles.map((article, idx) => {
         return(
-          <li className="full-article" key={idx}>
+          <li className={this.props.isMainArticle ? "home-page-article" : "full-article-grid"} key={idx}>
             <a className="article-link" href={article.url}>
-              <div className={this.props.isMainArticle ? "main-article" : "article"}>
+              <div className="article">
                 <ArticleTitle isMainArticle={this.props.isMainArticle} title={article.title} />
                 <ArticleAbstract isMainArticle={this.props.isMainArticle} abstract={article.abstract} />
                 <ArticleImage isMainArticle={this.props.isMainArticle} images={article.multimedia} />
