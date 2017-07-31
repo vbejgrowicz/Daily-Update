@@ -12,13 +12,6 @@
 }
 
 /*Home Page*/
-.home-page-news {
-  list-style-type: none;
-  justify-content: left;
-  width: 60vw;
-  position: relative;
-}
-
 .home-page-article {
   margin: 10px;
   background-color: lightgrey;
@@ -31,10 +24,21 @@
   opacity: 0.5;
 }
 
+/*Weather*/
+.weather {
+  display: inline-flex;
+  background-color: yellow;
+  height: 250px;
+  width: 250px;
+  margin: 10px;
+}
+
+
 /*News Grid */
 .articles {
+  position: relative;
   list-style-type: none;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -91,12 +95,12 @@ a.article-link {
   margin-bottom: 10px;
   width: 95%;
   height: 60vh;
+  min-height: 350px;
   background-repeat: no-repeat;
 }
 
 .no-image {
   background-image: url('../Images/nytimeslogo.jpeg');
-  margin: 10px;
   height: 100%;
   width: 100%;
   background-size: auto;

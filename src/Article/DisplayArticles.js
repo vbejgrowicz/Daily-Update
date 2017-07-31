@@ -8,7 +8,7 @@ class DisplayArticles extends React.Component {
 
   render() {
     return this.props.articles ? (
-      <div className={this.props.isMainArticle ? "home-page-news" : "articles"}>
+      <div className="articles">
       {this.props.articles.map((article, idx) => {
         return(
           <li className={this.props.isMainArticle ? "home-page-article" : "full-article-grid"} key={idx}>
@@ -22,7 +22,6 @@ class DisplayArticles extends React.Component {
           </li>
         );
       })}
-      <div className="DataByImage"></div>
       </div>
     ): null;
   }
