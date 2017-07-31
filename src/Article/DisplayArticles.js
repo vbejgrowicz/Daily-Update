@@ -22,6 +22,7 @@ class DisplayArticles extends React.Component {
           </li>
         );
       })}
+      <div className="DataByImage"></div>
       </div>
     ): null;
   }

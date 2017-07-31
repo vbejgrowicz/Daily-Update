@@ -2,6 +2,7 @@
 import React from 'react';
 import './Style/App.css';
 import { getAll } from './API/ArticlesAPI';
+import Loading from './Loading';
 import DisplayContent from './DisplayContent';
 import NavBar from './Utilities/NavBar';
 import Header from './Header';
@@ -11,7 +12,8 @@ class HomePage extends React.Component {
     super();
     this.state = {
       articles: null,
-      category: ""
+      category: "",
+      isLoading: true
     };
   }
 
@@ -20,12 +22,12 @@ componentDidMount() {
 }
 
 updateCategory(newCategory) {
-  this.setState({ category: newCategory }, this.getArticles);
+  this.setState({ isLoading: true, articles: null, category: newCategory }, this.getArticles);
 }
 
 getArticles() {
   getAll(this.state.category).then((articles) => {
-    this.setState({ articles });
+    this.setState({ articles, isLoading: false });
   });
 }
 
@@ -34,8 +36,7 @@ getArticles() {
       <div>
         <Header />
         <NavBar category={this.state.category} updateCategory={this.updateCategory.bind(this)} />
-        <DisplayContent isHomePage={this.props.isHomePage} category={this.state.category} articles={this.state.articles} />
-        <div className="DataByImage"></div>
+        {this.state.isLoading ? (<Loading />) : (<DisplayContent isHomePage={this.props.isHomePage} category={this.state.category} articles={this.state.articles} />)}
       </div>
     );
   }
