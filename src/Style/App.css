@@ -19,7 +19,7 @@
 .full-article {
   margin: 10px;
   background-color: lightgrey;
-  height: auto;
+  height: 100%;
   position: relative;
 }
 
@@ -32,9 +32,16 @@ a.article-link {
 }
 
 .article {
-  padding: 5px;
+  padding: 10px;
   width: 250px;
   height: 100%;
+  position: relative;
+}
+
+.main-article {
+  width: 60vw;
+  height: 100%;
+  padding: 10px;
   position: relative;
 }
 
@@ -45,13 +52,38 @@ a.article-link {
 }
 
 .image {
-  margin: 10px;
-  display: inline-block;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.article-image {
+  display: inline-flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 210px;
+  height: 140px;
+  background-repeat: no-repeat;
+}
+
+.main-image {
+  display: inline-flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 95%;
+  height: 60vh;
+  background-repeat: no-repeat;
 }
 
 .no-image {
   background-image: url('../Images/nytimeslogo.jpeg');
   margin: 10px;
+  height: 100%;
+  width: 100%;
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
   display: inline-block;
 }
 

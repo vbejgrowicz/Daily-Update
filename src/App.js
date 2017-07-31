@@ -1,8 +1,8 @@
 /*jshint esversion:6*/
 import React from 'react';
-import { Route, Redirect } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import './Style/App.css';
-import MainPage from './MainPage';
+import HomePage from './HomePage';
 
 class App extends React.Component {
 
@@ -10,8 +10,8 @@ class App extends React.Component {
     return (
       <div className="App">
         <Route path="/" render={({ location }) => (location.pathname === "/") ? (
-          <Redirect to="/home" />
-        ):(<MainPage pathname={location.pathname} category={location.pathname.split('/').join("")} />)} />
+          <HomePage isHomePage={true} category="home" />
+        ):(<HomePage pathname={location.pathname} category={location.pathname.split('/').join("")} />)} />
       </div>
     );
   }

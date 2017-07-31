@@ -13,10 +13,10 @@ class DisplayArticles extends React.Component {
         return(
           <li className="full-article" key={idx}>
             <a className="article-link" href={article.url}>
-              <div className="article">
-                <ArticleTitle title={article.title} />
-                <ArticleAbstract abstract={article.abstract} />
-                <ArticleImage images={article.multimedia} />
+              <div className={this.props.isMainArticle ? "main-article" : "article"}>
+                <ArticleTitle isMainArticle={this.props.isMainArticle} title={article.title} />
+                <ArticleAbstract isMainArticle={this.props.isMainArticle} abstract={article.abstract} />
+                <ArticleImage isMainArticle={this.props.isMainArticle} images={article.multimedia} />
               </div>
             </a>
           </li>

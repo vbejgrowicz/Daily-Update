@@ -2,14 +2,15 @@
 import React from 'react';
 import './Style/App.css';
 import { getAll } from './API/ArticlesAPI';
-import DisplayArticles from './Article/DisplayArticles';
+import DisplayContent from './DisplayContent';
 import NavBar from './Utilities/NavBar';
+import Header from './Header';
 
-class MainPage extends React.Component {
+class HomePage extends React.Component {
   constructor() {
     super();
     this.state = {
-      articles: [],
+      articles: null,
       category: ""
     };
   }
@@ -30,12 +31,10 @@ getArticles() {
 
   render() {
     return (
-      <div className="MainPage">
-        <div className="App-header">
-          <h2>News!</h2>
-        </div>
+      <div>
+        <Header />
         <NavBar category={this.state.category} updateCategory={this.updateCategory.bind(this)} />
-        <DisplayArticles articles={this.state.articles} />
+        <DisplayContent isHomePage={this.props.isHomePage} category={this.state.category} articles={this.state.articles} />
         <div className="DataByImage"></div>
       </div>
     );
@@ -43,4 +42,4 @@ getArticles() {
 }
 
 
-export default MainPage;
+export default HomePage;

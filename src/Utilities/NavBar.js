@@ -16,7 +16,7 @@ handleSelect(e) {
         <LinkContainer to="/world"><NavItem eventKey="world">World</NavItem></LinkContainer>
         <LinkContainer to="/national"><NavItem eventKey="national">National</NavItem></LinkContainer>
         <LinkContainer to="/politics"><NavItem eventKey="politics">Politics</NavItem></LinkContainer>
-        <LinkContainer to="/buisness"><NavItem eventKey="business">Buisness</NavItem></LinkContainer>
+        <LinkContainer to="/business"><NavItem eventKey="business">Business</NavItem></LinkContainer>
         <LinkContainer to="/technology"><NavItem eventKey="technology">Technology</NavItem></LinkContainer>
         <LinkContainer to="/sports"><NavItem eventKey="sports">Sports</NavItem></LinkContainer>
         <NavDropdown title="More" id="nav-dropdown">
