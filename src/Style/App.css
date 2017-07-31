@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.content {
+  position: relative;
+  display: inline-flex;
+}
 /*Header*/
 .App-header {
   background-color: #222;
@@ -26,13 +30,23 @@
 
 /*Weather*/
 .weather {
+  position: relative;
   display: inline-flex;
-  background-color: yellow;
   height: 250px;
   width: 250px;
   margin: 10px;
+  background-color: lightgrey;
 }
 
+.full-weather {
+  margin: 10px;
+  list-style-type: none;
+}
+
+.weather-image {
+  height: 50px;
+  width: 50px;
+}
 
 /*News Grid */
 .articles {
@@ -111,12 +125,13 @@ a.article-link {
 
 /*NY Times API Information*/
 .DataByImage {
+  position: absolute;
   background-image: url('../Images/DataBy.png');
   width: 150px;
   height: 30px;
   background-repeat: no-repeat;
-  position: absolute;
   right: 0;
+  bottom: 0;
 }
 
 /* Loading Spinner */

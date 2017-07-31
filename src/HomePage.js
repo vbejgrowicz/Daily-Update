@@ -44,7 +44,7 @@ getWeatherData() {
       <div>
         <Header />
         <NavBar category={this.state.category} updateCategory={this.updateCategory.bind(this)} />
-        {this.state.isLoading ? (<Loading />) : (<DisplayContent isHomePage={this.props.isHomePage} category={this.state.category} articles={this.state.articles} weather={[this.state.weather]} />)}
+        {this.state.isLoading ? (<Loading />) : (<DisplayContent isHomePage={this.props.isHomePage} category={this.state.category} articles={this.state.articles} weather={this.state.weather} />)}
       </div>
     );
   }

@@ -7,12 +7,15 @@ class DisplayWeather extends React.Component {
     console.log(this.props.weather);
     return this.props.weather ? (
       <div className="weather">
-      {this.props.weather.map((weather, idx) => {
+      {[this.props.weather].map((weather, idx) => {
         return(
           <li className="full-weather" key={idx}>
-            <a className="weather-link" href={weather.ob_url}>
+            <a className="weather-link" href={weather.forecast_url}>
               <div>
-                <div>{weather.temp_f}</div>
+                <div>Location: {weather.display_location.full}</div>
+                <div>Current Temperature: {weather.temp_f}</div>
+                <div>Feels Like: {weather.feelslike_f}</div>
+                <div className="weather-image" style={{backgroundImage: 'url(' + (weather.icon_url) +')'}}></div>
               </div>
             </a>
           </li>
