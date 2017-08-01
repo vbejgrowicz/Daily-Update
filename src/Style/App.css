@@ -4,7 +4,8 @@
 
 .content {
   position: relative;
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
 }
 /*Header*/
 .App-header {
@@ -30,22 +31,49 @@
 
 /*Weather*/
 .weather {
+  list-style-type: none;
   position: relative;
-  display: inline-flex;
-  height: 250px;
-  width: 250px;
+  display: inline-table;
+  height: auto;
+  width: auto;
   margin: 10px;
   background-color: lightgrey;
 }
 
+.weather:hover {
+  opacity: 0.5;
+}
+
 .full-weather {
-  margin: 10px;
-  list-style-type: none;
+  padding: 10px;
 }
 
 .weather-image {
   height: 50px;
   width: 50px;
+  display: inline-flex;
+}
+
+.weather-location {
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.current-temp {
+  font-weight: lighter;
+  font-size: 30px;
+}
+
+.weather-temp {
+  padding-left: 10px;
+  display: inline-block;
+  text-align: center;
+}
+
+.weather-logo {
+  width: 130px;
+  height: 80px;
+  margin: auto;
 }
 
 /*News Grid */

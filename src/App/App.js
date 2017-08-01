@@ -1,7 +1,7 @@
 /*jshint esversion:6*/
 import React from 'react';
 import { Route } from 'react-router-dom';
-import './Style/App.css';
+import '../Style/App.css';
 import HomePage from './HomePage';
 
 class App extends React.Component {

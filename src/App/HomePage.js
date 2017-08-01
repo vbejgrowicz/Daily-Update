@@ -1,11 +1,12 @@
 /*jshint esversion:6*/
 import React from 'react';
-import { getWeather } from './API/WeatherAPI';
-import { getAll } from './API/ArticlesAPI';
-import Loading from './Loading';
-import DisplayContent from './DisplayContent';
-import NavBar from './Utilities/NavBar';
+import { getWeather } from '../API/WeatherAPI';
+import { getAll } from '../API/ArticlesAPI';
+import Loading from '../Utilities/Loading';
+import NavBar from '../Utilities/NavBar';
 import Header from './Header';
+import DisplayContent from './DisplayContent';
+
 
 class HomePage extends React.Component {
   constructor() {
