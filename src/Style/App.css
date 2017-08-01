@@ -21,12 +21,20 @@
   margin: 10px;
   background-color: lightgrey;
   height: auto;
-  width: 60vw;
+  width: auto;
   position: relative;
 }
 
 .home-page-article:hover {
   opacity: 0.5;
+}
+
+.stockticker {
+  display: flex;
+  background-color: lightgrey;
+  padding: 10px;
+  margin: 10px;
+  border: none;
 }
 
 /*Weather*/
@@ -35,7 +43,7 @@
   position: relative;
   display: inline-table;
   height: auto;
-  width: auto;
+  width: 300px;
   margin: 10px;
   background-color: lightgrey;
 }
@@ -55,8 +63,8 @@
 }
 
 .weather-location {
-  font-weight: bolder;
-  font-size: 20px;
+  font-weight: bold;
+  font-size: 30px;
 }
 
 .current-temp {
@@ -65,7 +73,7 @@
 }
 
 .weather-temp {
-  padding-left: 10px;
+  padding-left: 20px;
   display: inline-block;
   text-align: center;
 }
@@ -134,10 +142,8 @@ a.article-link {
 .home-page-image {
   display: inline-flex;
   margin-top: 10px;
-  margin-bottom: 10px;
-  width: 95%;
-  height: 60vh;
-  min-height: 350px;
+  width: 90%;
+  height: 400px;
   background-repeat: no-repeat;
 }
 
@@ -153,13 +159,11 @@ a.article-link {
 
 /*NY Times API Information*/
 .DataByImage {
-  position: absolute;
+  position: relative;
   background-image: url('../Images/DataBy.png');
   width: 150px;
   height: 30px;
   background-repeat: no-repeat;
-  right: 0;
-  bottom: 0;
 }
 
 /* Loading Spinner */

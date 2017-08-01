@@ -36,7 +36,7 @@ getArticles() {
 
 getWeatherData() {
   getWeather("NY", "New York").then((weather) => {
-    this.setState({ weather });
+    this.setState({ weather, isLoading: false });
   });
 }
 

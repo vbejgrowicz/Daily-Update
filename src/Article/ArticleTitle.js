@@ -5,7 +5,7 @@ class ArticleTitle extends React.Component {
 
   render() {
     return (
-      <div className="title">{this.props.title}</div>
+      <div className="title" style={this.props.isMainArticle ? { fontSize : 'x-large' } : {} }>{this.props.title}</div>
     );
   }
 }
