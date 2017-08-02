@@ -13,7 +13,7 @@ class DisplayContent extends React.Component {
           <DisplayArticles isMainArticle={true} articles={this.props.articles && [this.props.articles[0]]} />
           <div>
             <DisplayWeather weather={this.props.weather} />
-            <iframe className="stockticker" width="300" scrolling="no" height="300" src="https://widgets.tc2000.com/WidgetServer.ashx?id=64007"></iframe>
+            <div className="stockticker"><iframe className="ticker" width="280" scrolling="no" height="280" src="https://widgets.tc2000.com/WidgetServer.ashx?id=64007"></iframe></div>
           </div>
         </div>
         <div className="DataByImage"></div>

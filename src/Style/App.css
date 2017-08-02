@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #eee;
 }
 
 .content {
@@ -9,17 +10,67 @@
 }
 /*Header*/
 .App-header {
-  background-color: #222;
+  background-color: #6795ba;
   height: auto;
   padding: 10px;
   color: white;
-  font-size: 30px;
+}
+
+h1 {
+  color: #eee;
+  text-shadow: 2px 2px 4px black;
+  margin: 0;
+}
+
+/*Nav Tabs*/
+.nav-tabs {
+  border: 0px;
+  font-size: 18px;
+}
+.nav-justified {
+  background-color: #6795ba;
+  color: #fff;
+}
+
+.nav-tabs.nav-justified>li.active>a {
+  border-bottom: 1px solid #eee;
+}
+
+.nav-tabs.nav-justified>.active>a:focus ,.nav-tabs.nav-justified>.active>a:hover {
+  border-bottom-color: #eee;
+}
+
+.nav-tabs.nav-justified>li>a {
+  border-bottom: 1px solid #eee;
+}
+
+.nav-tabs>li>a {
+  border: none;
+}
+
+.nav>li>a:hover {
+  color: black;
+}
+.nav-tabs>li.active>a:hover {
+  background-color: #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.nav-tabs>li.active>a:focus {
+  background-color: #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.nav-tabs>li.active>a {
+  background-color: #eee;
+  border-bottom: 1px solid #eee;
+  color: black;
 }
 
 /*Home Page*/
 .home-page-article {
-  margin: 10px;
-  background-color: lightgrey;
+  margin: 20px;
+  background-color: #e1effa;
   height: auto;
   width: auto;
   position: relative;
@@ -31,10 +82,19 @@
 
 .stockticker {
   display: flex;
-  background-color: lightgrey;
-  padding: 10px;
-  margin: 10px;
+  background-color: #e1effa;
+  margin: 20px;
+  padding: 20px;
   border: none;
+  box-shadow: 0 0 1em #3b3c85;
+}
+
+.ticker {
+  justify-content: center;
+  margin: auto;
+  border-style: solid;
+  border-width: thin;
+  border-color: #9c9cbe;
 }
 
 /*Weather*/
@@ -43,9 +103,10 @@
   position: relative;
   display: inline-table;
   height: auto;
-  width: 300px;
-  margin: 10px;
-  background-color: lightgrey;
+  width: 320px;
+  margin: 20px;
+  background-color: #e1effa;
+  box-shadow: 0 0 1em #3b3c85;
 }
 
 .weather:hover {
@@ -64,7 +125,7 @@
 
 .weather-location {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .current-temp {
@@ -94,8 +155,8 @@
 }
 
 .full-article-grid {
-  margin: 10px;
-  background-color: lightgrey;
+  margin: 20px;
+  background-color: #e1effa;
   height: auto;
   position: relative;
   width: 250px;
@@ -110,6 +171,7 @@ a.article-link {
 }
 
 .article {
+  box-shadow: 0 0 1em #3b3c85;
   padding: 10px;
   width: inherit;
   height: 100%;
@@ -137,14 +199,20 @@ a.article-link {
   width: 210px;
   height: 140px;
   background-repeat: no-repeat;
+  border-style: solid;
+  border-width: thin;
+  border-color: #9c9cbe;
 }
 
 .home-page-image {
   display: inline-flex;
   margin-top: 10px;
   width: 90%;
-  height: 400px;
+  height: 450px;
   background-repeat: no-repeat;
+  border-style: solid;
+  border-width: thin;
+  border-color: #9c9cbe;
 }
 
 .no-image {
