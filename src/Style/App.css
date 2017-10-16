@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  background-color: #eee;
 }
 
 .content {
@@ -13,10 +12,9 @@
   background-color: #6795ba;
   height: auto;
   padding: 10px;
-  color: white;
 }
 
-h1 {
+.header {
   color: #eee;
   text-shadow: 2px 2px 4px black;
   margin: 0;
@@ -24,20 +22,16 @@ h1 {
 
 /*Nav Tabs*/
 .nav-tabs {
-  border: 0px;
   font-size: 18px;
 }
+
 .nav-justified {
   background-color: #6795ba;
-  color: #fff;
+  color: #eee;
 }
 
 .nav-tabs.nav-justified>li.active>a {
-  border-bottom: 1px solid #eee;
-}
-
-.nav-tabs.nav-justified>.active>a:focus ,.nav-tabs.nav-justified>.active>a:hover {
-  border-bottom-color: #eee;
+  border-bottom: 1px solid #eee !important;
 }
 
 .nav-tabs.nav-justified>li>a {
@@ -46,25 +40,46 @@ h1 {
 
 .nav-tabs>li>a {
   border: none;
+  border-bottom: 1px solid #eee;
+}
+.nav>li>a:hover {
+  color: #555;
+  border-bottom: 1px solid #eee;
 }
 
-.nav>li>a:hover {
-  color: black;
+.nav-dropdown>a:focus {
+  color: #555;
 }
-.nav-tabs>li.active>a:hover {
+
+.nav-dropdown>a:hover {
+  color: #555;
+}
+.nav-dropdown>a:active {
+  color: #555;
+}
+
+.nav-dropdown>a:hover {
+ color: #555;
+ background-color: #eee;
+ border-bottom: 1px solid #eee;
+}
+
+.nav-tabs.nav-justified>li.active>a {
+  color: #555;
   background-color: #eee;
   border-bottom: 1px solid #eee;
 }
 
 .nav-tabs>li.active>a:focus {
+  color: #555;
   background-color: #eee;
   border-bottom: 1px solid #eee;
 }
 
-.nav-tabs>li.active>a {
-  background-color: #eee;
-  border-bottom: 1px solid #eee;
-  color: black;
+.nav-tabs.nav-justified>li.active>a:hover {
+ color: #555;
+ background-color: #eee;
+ border-bottom: 1px solid #eee;
 }
 
 /*Home Page*/
@@ -74,10 +89,6 @@ h1 {
   height: auto;
   width: auto;
   position: relative;
-}
-
-.home-page-article:hover {
-  opacity: 0.5;
 }
 
 .stockticker {
@@ -107,10 +118,6 @@ h1 {
   margin: 20px;
   background-color: #e1effa;
   box-shadow: 0 0 1em #3b3c85;
-}
-
-.weather:hover {
-  opacity: 0.5;
 }
 
 .full-weather {
