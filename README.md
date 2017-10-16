@@ -8,7 +8,7 @@ A single-page application built with React that allows users to browse top news 
 
 2.  Navigate to the project directory.
 
-  `$ cd News-App`
+  `$ cd Daily-Update`
 
 3.  Install the package.
 
@@ -19,4 +19,4 @@ A single-page application built with React that allows users to browse top news 
   `$ npm start`
   
 ## How to Use
-After running the application a browser will open with the News App where you can browse top news stories.
+After running the application a browser will open with the Daily Update App where you can browse top news stories.
