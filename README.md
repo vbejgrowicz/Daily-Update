@@ -4,7 +4,7 @@ A single-page application built with React that allows users to browse top news 
 ## Getting Started
 1.  Clone this repository:
 
-  `$ git clone https://github.com/vbejgrowicz/News-App.git`
+  `$ git clone https://github.com/vbejgrowicz/Daily-Update.git`
 
 2.  Navigate to the project directory.
 
