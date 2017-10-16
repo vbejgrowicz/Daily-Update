@@ -47,6 +47,27 @@
   border-bottom: 1px solid #eee;
 }
 
+.dropdown-menu {
+  background-color: #eee;
+}
+
+.dropdown-menu>li>a {
+  color: #555;
+}
+
+.dropdown-menu>.active>a {
+  background-color: #6795ba;
+}
+
+.dropdown-menu>.active>a:hover {
+  background-color: #6795ba;
+}
+
+.dropdown-menu>li>a:hover {
+  background-color: #6795ba;
+  color: #eee;
+}
+
 .nav-dropdown>a:focus {
   color: #555;
 }
