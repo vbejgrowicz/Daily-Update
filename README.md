@@ -1,4 +1,4 @@
-# News-App
+# Daily Update
 A single-page application built with React that allows users to browse top news stories.
 
 ## Getting Started
