@@ -20,6 +20,7 @@ class HomePage extends React.Component {
   }
 
 componentDidMount() {
+  window.setInterval(() => window.location.reload(), 300000);
   this.setState({ category: this.props.category },this.getArticles);
   this.getWeatherData();
 }
