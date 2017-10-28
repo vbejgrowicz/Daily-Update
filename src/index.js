@@ -1,11 +1,11 @@
 /*jshint esversion:6*/
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import './Style/index.css';
 import App from './App/App';
 
 ReactDOM.render(
-  <BrowserRouter><App /></BrowserRouter>,
+  <HashRouter><App /></HashRouter>,
   document.getElementById('root')
 );
