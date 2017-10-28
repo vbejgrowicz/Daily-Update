@@ -1,6 +1,8 @@
 # Daily Update
 A single-page application built with React that allows users to browse top news stories.
 
+Get the latest news [here](https://vbejgrowicz.github.io/Daily-Update/#/)!
+
 ## Getting Started
 1.  Clone this repository:
 
